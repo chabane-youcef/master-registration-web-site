@@ -1,0 +1,52 @@
+<!-- CREATE BY : CHABANE YOUCEF EL AMINE & BOUFAR TAREK -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>login</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+</head>
+<body>
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="main.jsp" class="navbar__logo">master</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="inscriptio.jsp">Sign In</a></li>
+						<li><a href="login-section.html">Log In</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- Authentication pages -->
+	<div class="auth">
+		<div class="container">
+			<div class="auth__inner">
+				<div class="auth__media">
+					
+					<img src="./images/login.svg">
+				</div>
+				<div class="auth__auth">
+					<h1 class="auth__title">Login into your account</h1>
+					<p>Fill in the needed informations</p>
+					<form method="post" action="StudentServlet"   class="form">
+						<input name="email" class="fakefield">
+						<label>Email:</label>
+						<input type="text" name="emailS" id='email' placeholder="chabaneyoucef@gmail.com">
+						<label>Password</label>
+						<input type="password" name="passwordS" id='password' placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" autocomplete="off">
+                        <input type="submit" class="button button__accent" value="log in">
+                        <input type="hidden" name="command" value="login">
+						<a href="inscriptio.jsp"><h6 class="left-align" >don't have an account?</h6></a>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
